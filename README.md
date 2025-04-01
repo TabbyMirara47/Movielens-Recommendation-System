@@ -34,32 +34,32 @@ In this section, we explore the datasets inorder to get a guide for model develo
 
 
 #  The number of ratings
-![Movielens_recommendation](image4/capture_001.PNG)
+![Movielens_recommendation](image4/Capture_001.PNG)
 
 From the above plot, we can see that most users rate very few movies, and few users rate many movies. This shows that the dataset has a lot of users with little interaction
 
 
 # Ratings per movie
-![Movielens_recommendation](image4/capture_002.PNG)
+![Movielens_recommendation](image4/Capture_002.PNG)
 
 From this plot, it is evident that, very many movies have few ratings while few movies have many ratings.
 # Rating distribution
-![Movielens_recommendation](image4/capture_003.PNG)
+![Movielens_recommendation](image4/Capture_003.PNG)
 Most movies recieve a rating of 4.0 followed by 3.0.
 
 #  Top 10 most rated movies
 
 **Highest and Lowest Rated Movies**
-![Movielens_recommendation](image4/capture_004.PNG)
+![Movielens_recommendation](image4/Capture_004.PNG)
 This gragh shows the top 10 most rated movies with  Braveheart  leading.
 
 
 #  The frequency of each movie genre
-![Movielens_recommendation](image4/capture_005.PNG)
+![Movielens_recommendation](image4/Capture_005.PNG)
 Drama has the highest ratings followed by comedy while film-Noir has the least count of ratings
 
 #  The average rating per Genre
-![Movielens_recommendation](image4/capture_006.PNG)
+![Movielens_recommendation](image4/Capture_006.PNG)
 Film-Noir, War, and Documentary have the highest average ratings although they appear least frequently in the previous graph. This implies that these genres have niche audiences, who enjoy these movies and rate them highly.
 
 # Modeling
@@ -87,16 +87,16 @@ The next step to compare the performance of the model is to visualize the averag
 
 
 ##### Barplot showing RMSE and MAE
-![Movielens_recommendation](image4/capture_007.PNG)
+![Movielens_recommendation](image4/Capture_007.PNG)
 
 The SVD model has an average RMSE of ~0.8 and an average MAE of ~0.7 compared to the average RMSE and MAE of the Hybrid model which are ~1.3 and ~1.2 respectively. The SVD model outperforms the Hybrid model.
 
  # Scatter plot for predictions vs actual ratings
-![Movielens_recommendation](image4/capture_008.PNG)
+![Movielens_recommendation](image4/Capture_008.PNG)
 SVD predictions are close to the diagonal reference line (y=x) than  hybrid predictions. This suggests that the hybrid model struggles to balance Cf and CBF contributions effectively.
 
 ##### KDE showing Error Distribution Plot
-![Movielens_recommendation](image4/capture_009.PNG)
+![Movielens_recommendation](image4/Capture_009.PNG)
 
 
 The Hybrid Model appears to be biased negatively but appears to be more consistent and has lower error variance. Since the goal is to have errors closer to zero on average, the SVD model is more preferable but its spread suggests that it's inconsistent.
